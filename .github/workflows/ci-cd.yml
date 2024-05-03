@@ -28,7 +28,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: build
-          path: dist
+          path: build
 
   deploy:
     runs-on: ubuntu-latest
@@ -41,4 +41,4 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@4.1.6
         with:
           branch: gh-pages
-          folder: dist
+          folder: build
